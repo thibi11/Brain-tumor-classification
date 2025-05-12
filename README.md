@@ -33,7 +33,7 @@ The model is integrated with Gradio, allowing users to upload MRI images and rec
 ## How to Run
 
 1. Open the notebook in **Google Colab**:  
-   👉 [Click here to open in Colab](https://colab.research.google.com/github/Kokisha2004/Brain-Tumor-Classification/blob/main/brain_tumor_classification.ipynb)  
+   👉 [Click here to open in Colab](https://colab.research.google.com/github/Kokisha2004/Brain-tumor-classification/blob/main/brain_tumor_classification.ipynb)  
 2. Mount your **Google Drive** if your dataset is stored there.  
 3. Run all cells to load the data, train the model, and launch the Gradio interface.  
 4. Use the interface to upload MRI images and classify tumor type.
