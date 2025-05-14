@@ -1,49 +1,71 @@
-# Brain Tumor Classification - Naan Mudhalvan Project
 
-This project is developed as part of the **Naan Mudhalvan** skill development program under the subject **Deep Learning**. It focuses on classifying brain tumors from MRI images using a Convolutional Neural Network (CNN) and providing predictions through an interactive Gradio interface.
+# 🧠 Brain Tumor Classification Using CNN & Gradio
 
-## Introduction
+This project uses a Convolutional Neural Network (CNN) to classify brain MRI images as either showing a tumor or not. A simple and interactive Gradio interface is built for user input and model prediction.  
+It is implemented in **Google Colab** for easy accessibility.
 
-Brain tumor detection and classification from MRI scans is a critical task in medical imaging. In this project, a deep learning model is trained to categorize brain MRI images into four classes:
+---
 
-- Glioma  
-- Meningioma  
-- Pituitary Tumor  
-- No Tumor  
+## 📌 Features
 
-The model is integrated with Gradio, allowing users to upload MRI images and receive predictions instantly through a simple web interface.
+- Classifies brain MRI images into **Tumor** or **No Tumor**
+- Built using **TensorFlow/Keras**
+- Web interface with **Gradio**
+- Dataset loading, preprocessing, model training, and prediction in one Colab notebook
 
-## Project Structure
+---
 
-- `brain_tumor_classification.ipynb` – Jupyter Notebook with code for data loading, model training, and Gradio integration.
-- `README.md` – Project documentation.
-- Dataset path is assumed to be in Google Drive at:  
-  `/content/drive/MyDrive/Brain Tumor Segmentation/Training/`
+## 📁 Dataset
 
-## Technologies Used
+- MRI images classified into folders: `yes/` (tumor), `no/` (no tumor)
+- Image preprocessing includes resizing, normalization, and grayscale conversion
 
-- Python  
-- Google Colab  
-- TensorFlow & Keras (Deep Learning)  
-- OpenCV (Image Preprocessing)  
-- Scikit-learn (Preprocessing & Splitting)  
-- Gradio (Web Interface)  
-- NumPy (Data Handling)
+---
 
-## How to Run
+## 🚀 How to Use (in Google Colab)
 
-1. Open the notebook in **Google Colab**:  
-   👉 [Click here to open in Colab](https://colab.research.google.com/github/Kokisha2004/Brain-tumor-classification/blob/main/brain_tumor_classification.ipynb)  
-2. Mount your **Google Drive** if your dataset is stored there.  
-3. Run all cells to load the data, train the model, and launch the Gradio interface.  
-4. Use the interface to upload MRI images and classify tumor type.
+1. **Open the Colab Notebook**  
+   Upload and open the `.ipynb` file in Google Colab.
 
-## Future Enhancements
+2. **Install Dependencies**  
+   All required Python libraries like TensorFlow, Gradio, NumPy, etc., are installed in the notebook.
 
-- Improve prediction accuracy with deeper or pretrained CNN architectures.  
-- Add data augmentation for better generalization.  
-- Deploy the Gradio app online for global accessibility.
+3. **Train the Model**  
+   The notebook trains a CNN model using the provided dataset.
 
-## License
+4. **Launch Gradio UI**  
+   Once trained, the model is connected to a Gradio interface where users can upload an MRI image and get a prediction.
 
-This project is developed for educational purposes under the **Naan Mudhalvan** initiative.
+---
+
+## 🛠 Technologies Used
+
+- Python
+- TensorFlow / Keras
+- OpenCV
+- Gradio
+- Google Colab
+
+---
+
+## 📈 Model Summary
+
+- Input: 150x150 grayscale MRI image
+- Layers: Conv2D, MaxPooling2D, Flatten, Dense
+- Output: Binary classification (Tumor / No Tumor)
+
+---
+
+## ✅ Example Output
+
+The Gradio interface displays the uploaded MRI and returns a label like:  
+```
+🧠 Prediction: Tumor
+```
+
+---
+
+## 📚 Conclusion
+
+This project demonstrates how deep learning can be used for medical image classification.  
+With Gradio and Colab, it becomes accessible and interactive for both learning and demonstration purposes.
